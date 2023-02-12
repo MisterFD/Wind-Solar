@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 const port = 4000;
 
 app.set('view engine','ejs');
@@ -17,4 +17,4 @@ app.get('/projet-2',(req,res)=>{res.render("projet-2");});
 app.get('/projet-3',(req,res)=>{res.render("projet-3");});
 app.get('/projet-4',(req,res)=>{res.render("projet-4");});
 app.get('/training',(req,res)=>{res.render("training");});
-app.listen(port,()=>{console.log("Server running on port ${port}")});
+app.listen(port,()=>{console.log('Server running on port '+ port)});
